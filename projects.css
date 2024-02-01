@@ -1,51 +1,100 @@
-body {
-    font-family: 'Arial Narrow', sans-serif;
-    font-weight: 500;
-    font-variant: small-caps;
-    margin: 0;
-    padding: 0;
-    background-color: #001f3f;
-    color: #ffffff;
-  }
-  
-  nav {
-    background-color: #001f3f;
-    width: 150px;
-    position: fixed;
-    height: 100%;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.4em;
-  }
-  
-  li {
-    padding: 15px;
-  }
-  
-  a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-color: #003366;
-  }
-  
-  .tab-content {
-    margin-left: 150px;
-    padding: 2em;
-  }
-  
-  h1 {
-    font-size: 5em;
-    margin-bottom: 0.5em;
-  }
-  
-  .intro-text {
-    font-size: 1.6em;
-  }
-  
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: url(images/projects-back.png) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #dfbdfd;
+}
+
+.logo {
+  font-weight: 700;
+  color: #ff9b9b;
+  font-size: 1.5em;
+}
+
+.menu a {
+  color: rgb(212, 169, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project {
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-info {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  bottom: 0;
+  color: rgb(170, 125, 215);
+  width: 100%;
+  transform: translateY(70%);
+  transition: transform 0.3s ease;
+}
+
+.project:hover .project-image {
+  transform: translateY(-30%);
+}
+
+.project:hover .project-info {
+  transform: translateY(0);
+}
+
+h3 {
+  text-align: center;
+}
+
+.project a {
+  color: #faf4ff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.project a:hover {
+  color: #7098ff;
+}
+
+.project p {
+  text-align: center;
+  color: #ddc5f0;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
