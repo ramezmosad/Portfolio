@@ -1,8 +1,18 @@
-body, html {
+/* body, html {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background: url(images/projects-back.png) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+} */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: url(images/main-back.png) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
@@ -53,7 +63,7 @@ body, html {
   font-family: 'Courier New', Courier, monospace;
   position: absolute;
   bottom: 0;
-  color: rgb(170, 125, 215);
+  color: #ff9b9b;
   width: 100%;
   transform: translateY(70%);
   transition: transform 0.3s ease;
